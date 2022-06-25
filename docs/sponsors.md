@@ -11,6 +11,7 @@
       description: TEXT,
       site_url: VARCHAR,
       thumbnail_url: VARCHAR,
+      period_id: INT,
     }
   ]
 }
