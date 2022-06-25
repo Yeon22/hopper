@@ -6,7 +6,7 @@ const bannerJson = (banner) => {
     title: banner.title,
     description: banner.description,
     site_url: banner.site_url,
-    image_url: `${process.env.URL}/default.jpeg`,
+    image_url: `${process.env.URL}/default.jpeg?raw=true`,
   };
 };
 
