@@ -20,6 +20,11 @@ module.exports = (db, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING(125),
       },
+      tags: {
+        allowNull: false,
+        type: DataTypes.STRING(125),
+        defaultValue: "",
+      },
       description: {
         allowNull: false,
         type: DataTypes.TEXT,

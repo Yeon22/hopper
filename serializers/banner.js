@@ -7,6 +7,7 @@ const bannerJson = (banner) => {
     description: banner.description,
     site_url: banner.site_url,
     thumbnail_url: banner.image_url,
+    tags: banner.tags,
   };
 };
 

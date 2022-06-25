@@ -10,6 +10,7 @@
     description: TEXT,
     site_url: VARCHAR,
     thumbnail_url: VARCHAR,
+    tags: VARCHAR
   },
   banners: [
     {
@@ -18,6 +19,7 @@
       description: TEXT,
       site_url: VARCHAR,
       thumbnail_url: VARCHAR,
+      tags: VARCHAR
     }
   ]
 }

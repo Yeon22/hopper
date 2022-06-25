@@ -39,6 +39,7 @@ CREATE TABLE sponsor_category (
 CREATE TABLE banner (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   title VARCHAR(125) NOT NULL,
+  tags VARCHAR(125) NOT NULL DEFAULT '',
   description TEXT NOT NULL,
   image_id INT NOT NULL,
   site_url VARCHAR(512) NOT NULL DEFAULT '',
