@@ -34,7 +34,7 @@ module.exports = (db, DataTypes) => {
       },
       description: {
         allowNull: false,
-        type: DataTypes.STRING(512),
+        type: DataTypes.TEXT,
       },
       site_url: {
         allowNull: false,
