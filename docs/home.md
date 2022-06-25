@@ -17,7 +17,7 @@
     {
       id: INT,
       name: VARCHAR,
-      thumbnail_url: VARCHAR,
+      image_url: VARCHAR,
     }
   ]
 }

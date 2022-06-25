@@ -4,7 +4,7 @@ const sponsorCategoryJson = (category) => {
   return {
     id: category.id,
     name: category.name,
-    thumbnail_url: category.thumbnail_url,
+    image_url: category.image_url,
   };
 };
 
