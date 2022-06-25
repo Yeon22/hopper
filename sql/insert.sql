@@ -387,12 +387,12 @@ INSERT INTO sponsor_category (name, image_id, description) VALUES ('자연재해
 INSERT INTO sponsor_category (name, image_id, description) VALUES ('기타', 6, '함께하기 위한 다양한 노력을 함께하세요.');
 
 
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라이나 긴급구호', '우크라이나 위기는 악화되고 있으며
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Pray_For_Ukrain 우크라이나 긴급구호', '우크라이나 위기는 악화되고 있으며
 더 많은 피난민들이 우크라이나 국경을 넘고 있습니다
 난민들이 무사히 고향으로 돌아갈 때까지
 이들을 안전하게 보호할 수 있도록
 지금 유엔난민기구와 함께해 주세요', 0, 'https://www.unhcr.or.kr/unhcr/program/donate_row/support01.jsp');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라이나 난민 긴급구호', '우리의 후원이 우크라이나 난민을 지킬 수 있습니다
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Pray_For_Ukrain 우크라이나 난민 긴급구호', '우리의 후원이 우크라이나 난민을 지킬 수 있습니다
 2020년 설립된 피스윈즈코리아는 몰도바에서 본부 사업과 별도로 우크라이나에 물자를 보내는 보급 사업을 진행하고 있습니다. 몰도바와 가까운 우크라이나 남부의 오데사 미콜라이우 지역을 중심으로 정신병원이나 요양병원 등 취약 시설에 생필품과 같은 구호 물품을 보내는 활동입니다. 전쟁이 장기화하면서 해당 시설들은 필수 물자들도 제대로 보급받지 못하고 있습니다.
 
 구호 대원들은 국내 여권법상 여행금지 지역으로 설정된 우크라이나에 직접 들어갈 수 없었습니다. 하지만 몰도바에서 우연히 만난 토포렛 블라드미르 목사가 ‘나의 소명’이라며 우크라이나 물자 수송 지원을 자처하면서 보급 작전의 물꼬가 트였습니다. 몰도바 국적의 블라드미르 목사는 몰도바와 우크라이나 일대에서 개척교회를 운영하며 사역 활동을 하던 인물로 우크라이나 지리나 내부 사정에도 해박해 큰 도움을 받았다고 합니다.
@@ -400,20 +400,20 @@ INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라�
 피스윈즈코리아가 몰도바의 대형 물류 센터에서 필요한 물자들을 구입하면, 블라드미르 목사가 현지 스태프 1명과 함께 주 2회 정도 직접 승합차를 운전해 우크라이나 국경을 넘어 전달하는 식입니다. 언제 위험한 상황을 마주할지 몰라 새벽에 출발, 온종일 물자를 배송하고 밤 12시를 넘겨 새벽에 다시 돌아오는 ‘무박 2일’ 일정이었습니다.
 
 물자 보급 차량 옆으로 미사일이 지나가는 일이 있을 정도로 현지 상황은 급박합니다. 러시아는 개전 초부터 우크라이나 남부의 전략적 요충지인 오데사 지역을 집중적으로 공격했습니다. 지난달 30일(현지시간)엔 러시아군이 오데사 공항을 폭격하기도 했습니다. 블라드미르 목사는 구호 대원들에게 “여러분의 지원과 기도로 우크라이나가 아직도 버티고 있습니다. 앞으로도 세계의 도움이 필요하다”고 했습니다.', 0, 'https://together.kakao.com/fundraisings/97376');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라이나 지원', '매일 죽음을 목격한 우크라이나 사람들은 더 안전한 곳을 찾아 떠나고 있습니다.', 0, 'https://www.redcross.or.kr/donation_campaign/togetherofhumanity/index.htm');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('산불 피해 지역 나무 심기', '', 0, 'https://goodcam.kr/');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('강원도산불피해', '산불 피해 지역 산림을
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Pray_For_Ukrain 우크라이나 지원', '매일 죽음을 목격한 우크라이나 사람들은 더 안전한 곳을 찾아 떠나고 있습니다.', 0, 'https://www.redcross.or.kr/donation_campaign/togetherofhumanity/index.htm');
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Fight_Fire 산불 피해 지역 나무 심기', '', 0, 'https://goodcam.kr/');
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Fight_Fire 강원도산불피해', '산불 피해 지역 산림을
 
 살리는 첫 걸음,
 
 정기후원으로 시작해 보세요.', 0, 'https://my.worldvision.or.kr/hope/sponsor_onestopselect.asp?gubun=2&code=3036&amount_cd=3103&moti=25533');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('산불피해 산림 복원 프로젝트', '산불이 앗아간 숲, 시민들의 힘으로 다시, 숲으로 갑니다.
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Fight_Fire 산불피해 산림 복원 프로젝트', '산불이 앗아간 숲, 시민들의 힘으로 다시, 숲으로 갑니다.
 산불피해지는 자연적으로 회복하기 위해서는 수 많은 시간이 필요합니다. 흙쓸림이나 산사태 위험도 높아지고, 숲으로 갈 수 있는 환경이 되지 못하기도 합니다. 생명의숲은 사라진 숲들이 다시 숲으로 회복될 수 있도록, 시민들과 나무를 심고 가꿔갑니다.
 
 이제는 불이 꺼지고 난 뒤에 발생할 수 있는 산사태나 초미세 먼지 발생 같은 2차 재난도 미리 준비해야 합니다. 이를 막기 위한 산림 복원에는 막대한 시간과 비용이 필요합니다.
 
 생명의 숲은 "산불 피해 산림 복원 프로젝트"를 통해 2022년 재난안전관리 측면에서 숲을 조성하고 관리하는 방법을 논의하고자 합니다. 또, 시민 모니터링을 하며 산불피해지의 숲 생태 현황을 진단하고, 시민과 소통할 계획입니다. 2023년에는 시민참여, 기금모금 숲조성 및 관리를 하며 산불피해지 숲의 회복에 최선을 다하겠습니다', 0, 'https://together.kakao.com/fundraisings/94817');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19 위기대응 긴급구호', '국경없는의사회의
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Protect from Pandemic 코로나19 위기대응 긴급구호', '국경없는의사회의
 코로나19 위기대응
 국경없는의사회는 인도주의 구호 단체로서
 위기 상황과 사회 붕괴의 순간에 취약계층에게
@@ -427,12 +427,12 @@ INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19
 대응으로 시작해, 현재 이탈리아를 비롯해 코로나19가 특히
 치명적인 형태로 나타나는 지역을 중심으로 의료팀을 파견하고
 물품을 지원하는 등 지원을 확대하고 있습니다.', 0, 'https://msf.or.kr/campaigns/COVID-19/index.html');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19 긴급구호', '낯선 바이러스 앞에 무너지는 난민들
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Protect from Pandemic 코로나19 긴급구호', '낯선 바이러스 앞에 무너지는 난민들
 
 더 이상 지체할 시간이 없습니다
 
 우리가 바로 지금 도움의 손길을 내밀어야 하는 이유입니다', 0, 'https://www.unhcr.or.kr/coronavirus-emergency/');
-INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19 재난구호 더 가까이', '컴패션은 재난·재해 상황에 대비해 ‘재난 구호 기금’을 상시 운영하며, 피해 발생 시 초기 구호 비용으로 사용하고 있습니다.
+INSERT INTO banner (title, description, image_id, site_url) VALUES ('#Protect from Pandemic 코로나19 재난구호 더 가까이', '컴패션은 재난·재해 상황에 대비해 ‘재난 구호 기금’을 상시 운영하며, 피해 발생 시 초기 구호 비용으로 사용하고 있습니다.
 컴패션은 코로나19 발생 초반 ‘재난 구호 기금’을 통해 우선 지원하였으나 사태가 장기화 됨에 따라 부모들이 일자리를 잃고,
 이동 제한으로 식량을 구할 수 없는 등 추가적인 필요가 확인돼 코로나19 재난 구호 모금을 진행합니다.', 0, 'https://www.compassion.or.kr/campaign/covid19/?e_id=1101&e_src=covid19_closer_ad_banner_ajunews&utm_source=ajunews&utm_medium=ad_banner&utm_campaign=covid19_closer');
 
