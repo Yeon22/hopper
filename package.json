@@ -1,0 +1,27 @@
+{
+  "name": "sponsors",
+  "version": "1.0.0",
+  "description": "후원 사이트 모음",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeon22/sponsors.git"
+  },
+  "author": "Yeon22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yeon22/sponsors/issues"
+  },
+  "homepage": "https://github.com/Yeon22/sponsors#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.0"
+  }
+}

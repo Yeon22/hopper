@@ -1,0 +1,15 @@
+services:
+  db:
+    build:
+      dockerfile: Dockerfile.mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - overlay
+    environment:
+      - MYSQL_ROOT_PASSWORD=fieciwpxclsie452idfjiwl234532k
+    networks:
+      - overlay
+
+networks:
+  overlay:
