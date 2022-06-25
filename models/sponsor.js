@@ -36,6 +36,13 @@ module.exports = (db, DataTypes) => {
       },
     },
     {
+      getterMethods: {
+        thumbnail_url() {
+          if (this.thumbnail_id)
+            return `${process.env.URL}/sponsor/${this.thumbnail_id}.jpeg`;
+          return `${process.env.URL}/default.jpeg`;
+        },
+      },
       tableName: "sponsor",
       createdAt: "created_date_time",
       updatedAt: "updated_date_time",

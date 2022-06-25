@@ -1,14 +1,3 @@
-CREATE TABLE sponsor (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  name VARCHAR(70) NOT NULL,
-  site_url VARCHAR(255) NOT NULL DEFAULT '',
-  status INT(2) NOT NULL DEFAULT 1,
-  thumbnail_id INT NULL,
-  created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('월드비전', 'https://www.worldvision.or.kr', 1);
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('세이브더 칠드런', 'https://www.sc.or.kr', 2);
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('월드 쉐어', 'http://www.worldshare.or.kr', 3);
@@ -54,22 +43,6 @@ INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('유엔난민기구',
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('피즈윈즈코리아', 'https://together.kakao.com/fundraisings/97376', 43);
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('굿피플', 'https://goodcam.kr', 44);
 INSERT INTO sponsor (name, site_url, thumbnail_id) VALUES ('생명의숲', 'https://together.kakao.com/fundraisings/94817', 45);
-
-CREATE TABLE sponsor_item (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  sponsor_id INT UNSIGNED NULL,
-  status INT(2) NOT NULL DEFAULT 1,
-  category_id INT UNSIGNED NOT NULL,
-  title VARCHAR(125) NOT NULL,
-  description TEXT NOT NULL,
-  thumbnail_id INT UNSIGNED NOT NULL,
-  period_id INT UNSIGNED NULL,
-  site_url VARCHAR(255) NOT NULL DEFAULT '',
-  tags VARCHAR(255) NOT NULL DEFAULT '',
-  created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO sponsor_item (sponsor_id, category_id, title, description, thumbnail_id, site_url, tags, period_id)
   VALUES (1, 1, '월드비전 해외아동후원', '내가 가진 것을 나누어 아동의 일상이 변화되는 순간, 내 삶도 반짝입니다.
@@ -406,16 +379,6 @@ INSERT INTO sponsor_item (sponsor_id, category_id, title, description, thumbnail
 긴박한 상황 속 피난길에 오른
 우크라이나 아이들과 가족에게 지속적인 도움이 절실합니다', 54, 'https://www.unhcr.or.kr/ukraine-emergency/', '긴급구호,난민,보호지원', 1);
 
-CREATE TABLE sponsor_category (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  name VARCHAR(125) NOT NULL,
-  status INT(2) NOT NULL DEFAULT 1,
-  image_id INT NOT NULL,
-  created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 INSERT INTO sponsor_category (name, image_id) VALUES ('아동', 1);
 INSERT INTO sponsor_category (name, image_id) VALUES ('동물', 2);
 INSERT INTO sponsor_category (name, image_id) VALUES ('환경', 3);
@@ -423,17 +386,6 @@ INSERT INTO sponsor_category (name, image_id) VALUES ('여성', 4);
 INSERT INTO sponsor_category (name, image_id) VALUES ('자연재해', 5);
 INSERT INTO sponsor_category (name, image_id) VALUES ('기타', 6);
 
-CREATE TABLE banner (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  title VARCHAR(125) NOT NULL,
-  description TEXT NOT NULL,
-  image_id INT NOT NULL,
-  site_url VARCHAR(512) NOT NULL DEFAULT '',
-  status INT(2) NOT NULL DEFAULT 1,
-  created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라이나 긴급구호', '우크라이나 위기는 악화되고 있으며
 더 많은 피난민들이 우크라이나 국경을 넘고 있습니다
@@ -483,15 +435,3 @@ INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19
 INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19 재난구호 더 가까이', '컴패션은 재난·재해 상황에 대비해 ‘재난 구호 기금’을 상시 운영하며, 피해 발생 시 초기 구호 비용으로 사용하고 있습니다.
 컴패션은 코로나19 발생 초반 ‘재난 구호 기금’을 통해 우선 지원하였으나 사태가 장기화 됨에 따라 부모들이 일자리를 잃고,
 이동 제한으로 식량을 구할 수 없는 등 추가적인 필요가 확인돼 코로나19 재난 구호 모금을 진행합니다.', 9, 'https://www.compassion.or.kr/campaign/covid19/?e_id=1101&e_src=covid19_closer_ad_banner_ajunews&utm_source=ajunews&utm_medium=ad_banner&utm_campaign=covid19_closer');
-
-CREATE TABLE sponsor_period (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  name VARCHAR(10) NOT NULL,
-  status INT(2) NOT NULL DEFAULT 1,
-  created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO sponsor_period (name) VALUES ('장기 후원');
-INSERT INTO sponsor_period (name) VALUES ('단기 후원');

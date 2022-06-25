@@ -4,7 +4,7 @@ const sponsorCategoryJson = (category) => {
   return {
     id: category.id,
     name: category.name,
-    thumbnail_url: `${process.env.URL}/default.jpeg`,
+    thumbnail_url: category.thumbnail_url,
   };
 };
 
