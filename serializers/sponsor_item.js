@@ -6,7 +6,7 @@ const sponsorItemJson = (item) => {
     title: item.title,
     description: item.description,
     site_url: item.site_url,
-    thumbnail_url: `${process.env.URL}/default.jpeg?raw=true`,
+    thumbnail_url: `${process.env.URL}/default.jpeg`,
   };
 };
 
