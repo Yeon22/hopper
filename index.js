@@ -1,10 +1,15 @@
 const express = require("express");
 const app = express();
+
 const db = require("./models");
+
 const PORT = process.env.PORT || 3000;
+
 const cors = require("cors");
+const Helmet = require("helmet");
 
 app.use(express.urlencoded({ extended: false }));
+app.use(Helmet());
 app.use(
   cors({
     origin: ["*"],
@@ -26,6 +31,7 @@ app.use("/", indexRouter);
 const bannersRouter = require("./routes/banners");
 app.use("/banners", bannersRouter);
 const sponsorsRouter = require("./routes/sponsors");
+const { default: helmet } = require("helmet");
 app.use("/sponsors", sponsorsRouter);
 
 // default error handler
