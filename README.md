@@ -4,7 +4,7 @@
 
 ## ERD
 
-![ERD](/public/diagram.png)
+![ERD](/public/erd/diagram.png)
 
 ## Technical Stack
 

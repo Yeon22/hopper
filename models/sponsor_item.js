@@ -61,7 +61,7 @@ module.exports = (db, DataTypes) => {
         thumbnail_url() {
           if (this.thumbnail_id)
             return `${process.env.URL}/sponsor_item/${this.thumbnail_id}.jpeg`;
-          return `${process.env.URL}/default.jpeg`;
+          return `${process.env.URL}/default.png`;
         },
       },
       tableName: "sponsor_item",

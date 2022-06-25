@@ -39,7 +39,7 @@ module.exports = (db, DataTypes) => {
         image_url() {
           if (this.image_id)
             return `${process.env.URL}/sponsor_category/${this.image_id}.png`;
-          return `${process.env.URL}/default.jpeg`;
+          return `${process.env.URL}/default.png`;
         },
       },
       tableName: "sponsor_category",
