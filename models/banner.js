@@ -37,7 +37,7 @@ module.exports = (db, DataTypes) => {
       getterMethods: {
         image_url() {
           if (this.image_id)
-            return `${process.env.URL}/banner/${this.image_id}.jpeg`;
+            return `${process.env.URL}/banner/${this.image_id}.png`;
           return `${process.env.URL}/default.jpeg`;
         },
       },
