@@ -18,6 +18,7 @@
       id: INT,
       name: VARCHAR,
       image_url: VARCHAR,
+      description: VARCHAR,
     }
   ]
 }

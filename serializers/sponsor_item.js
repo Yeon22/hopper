@@ -9,6 +9,7 @@ const sponsorItemJson = (item) => {
     description: item.description,
     site_url: item.site_url,
     thumbnail_url: item.thumbnail_url,
+    tags: item.tags,
     period_id: period.id || null,
   };
 };

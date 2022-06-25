@@ -379,12 +379,12 @@ INSERT INTO sponsor_item (sponsor_id, category_id, title, description, thumbnail
 긴박한 상황 속 피난길에 오른
 우크라이나 아이들과 가족에게 지속적인 도움이 절실합니다', 0, 'https://www.unhcr.or.kr/ukraine-emergency/', '긴급구호,난민,보호지원', 1);
 
-INSERT INTO sponsor_category (name, image_id) VALUES ('아동', 1);
-INSERT INTO sponsor_category (name, image_id) VALUES ('동물', 2);
-INSERT INTO sponsor_category (name, image_id) VALUES ('환경', 3);
-INSERT INTO sponsor_category (name, image_id) VALUES ('여성', 4);
-INSERT INTO sponsor_category (name, image_id) VALUES ('자연재해', 5);
-INSERT INTO sponsor_category (name, image_id) VALUES ('기타', 6);
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('아동', 1, '아이들을 지키기 위한 노력을 함께하세요.');
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('동물', 2, '동물을 지키기 위한 노력을 함께하세요.');
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('환경', 3, '환경을 지키기 위한 노력을 함께하세요.');
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('여성', 4, '여성 인권을 지키기 위한 노력을 함께하세요.');
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('자연재해', 5, '재해로부터 지키기 위한 노력을 함께하세요.');
+INSERT INTO sponsor_category (name, image_id, description) VALUES ('기타', 6, '함께하기 위한 다양한 노력을 함께하세요.');
 
 
 INSERT INTO banner (title, description, image_id, site_url) VALUES ('우크라이나 긴급구호', '우크라이나 위기는 악화되고 있으며

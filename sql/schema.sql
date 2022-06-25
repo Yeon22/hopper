@@ -28,6 +28,7 @@ CREATE TABLE sponsor_item (
 CREATE TABLE sponsor_category (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   name VARCHAR(125) NOT NULL,
+  description VARCHAR(125) NOT NULL DEFAULT '',
   status INT(2) NOT NULL DEFAULT 1,
   image_id INT NOT NULL,
   created_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -55,6 +56,3 @@ CREATE TABLE sponsor_period (
   updated_date_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO sponsor_period (name) VALUES ('장기 후원');
-INSERT INTO sponsor_period (name) VALUES ('단기 후원');

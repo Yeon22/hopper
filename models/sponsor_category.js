@@ -20,6 +20,10 @@ module.exports = (db, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING(70),
       },
+      description: {
+        allowNull: false,
+        type: DataTypes.STRING(125),
+      },
       image_id: {
         allowNull: false,
         type: DataTypes.INTEGER,
