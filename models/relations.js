@@ -1,18 +1,8 @@
 const setupRelations = (db) => {
-  db.Sponsor.hasMany(db.SponsorItem, {
-    foreignKey: "sponsor_id",
+  db.SponsorItem.belongsTo(db.SponsorPeriod, {
+    foreignKey: "period_id",
     constraints: false,
-    as: "items",
-  });
-  db.SponsorItem.belongsTo(db.Sponsor, {
-    foreignKey: "sponsor_id",
-    constraints: false,
-    as: "sponsor",
-  });
-  db.SponsorItem.belongsTo(db.SponsorCategory, {
-    foreignKey: "category_id",
-    constraints: false,
-    as: "category",
+    as: "period",
   });
 };
 

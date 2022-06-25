@@ -435,3 +435,6 @@ INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19
 INSERT INTO banner (title, description, image_id, site_url) VALUES ('코로나19 재난구호 더 가까이', '컴패션은 재난·재해 상황에 대비해 ‘재난 구호 기금’을 상시 운영하며, 피해 발생 시 초기 구호 비용으로 사용하고 있습니다.
 컴패션은 코로나19 발생 초반 ‘재난 구호 기금’을 통해 우선 지원하였으나 사태가 장기화 됨에 따라 부모들이 일자리를 잃고,
 이동 제한으로 식량을 구할 수 없는 등 추가적인 필요가 확인돼 코로나19 재난 구호 모금을 진행합니다.', 0, 'https://www.compassion.or.kr/campaign/covid19/?e_id=1101&e_src=covid19_closer_ad_banner_ajunews&utm_source=ajunews&utm_medium=ad_banner&utm_campaign=covid19_closer');
+
+INSERT INTO sponsor_period (name) VALUES ('장기 후원');
+INSERT INTO sponsor_period (name) VALUES ('단기 후원');

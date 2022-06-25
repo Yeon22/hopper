@@ -3,7 +3,9 @@ const {
   fetchSponsorItemsByCategoryId,
   fetchSponsorItemsById,
 } = require("../app/sponsor_item");
+const { fetchActiveSponsorPeriods } = require("../app/sponsor_period");
 const { sponsorItemJson } = require("../serializers/sponsor_item");
+const { sponsorPeriodJson } = require("../serializers/sponsor_period");
 
 const router = Router();
 
@@ -13,9 +15,14 @@ router.get("/categories/:category_id/items", async (req, res, next) => {
     if (!categoryId) {
       return res.status(400).json({ message: "존재하지 않는 페이지입니다." });
     }
+
+    const sponsorPeriods = await fetchActiveSponsorPeriods();
     const sponsorItems = await fetchSponsorItemsByCategoryId(categoryId);
 
     res.json({
+      periods: sponsorPeriods.map((sponsorPeriod) =>
+        sponsorPeriodJson(sponsorPeriod)
+      ),
       items: sponsorItems.map((sponsorItem) => sponsorItemJson(sponsorItem)),
     });
   } catch (e) {

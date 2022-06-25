@@ -4,6 +4,7 @@ const fetchSponsorItemsByCategoryId = async (categoryId) => {
   if (!categoryId) return null;
 
   return await db.SponsorItem.findAll({
+    include: ["period"],
     where: {
       category_id: categoryId,
       status: db.SponsorItem.Status.ACTIVE,
@@ -22,4 +23,7 @@ const fetchSponsorItemsById = async (id) => {
   });
 };
 
-module.exports = { fetchSponsorItemsByCategoryId, fetchSponsorItemsById };
+module.exports = {
+  fetchSponsorItemsByCategoryId,
+  fetchSponsorItemsById,
+};

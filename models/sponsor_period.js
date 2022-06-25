@@ -4,6 +4,16 @@ module.exports = (db, DataTypes) => {
     INACTIVE: 0,
   };
 
+  const Type = {
+    SHORT: 1,
+    LONG: 2,
+  };
+
+  const TypeName = {
+    [Type.SHORT]: "short",
+    [Type.LONG]: "long",
+  };
+
   /**
    * 후원 기간(장기, 단기) 유형
    */
@@ -34,6 +44,8 @@ module.exports = (db, DataTypes) => {
   );
 
   SponsorPeriod.Status = Status;
+  SponsorPeriod.Type = Type;
+  SponsorPeriod.TypeName = TypeName;
 
   return SponsorPeriod;
 };
